@@ -1,9 +1,9 @@
 import React from "react";
 
-const Alert = () => {
+const Alert = ({type,msg}) => {
     return(
         <div>
-            <h2>Alert</h2>
+            <p className={`alert alert-${type}`}>{msg}</p>
         </div>
     )
 };
